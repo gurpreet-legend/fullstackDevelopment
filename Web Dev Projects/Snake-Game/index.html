@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost Snake</title>
+    <link rel="stylesheet" href="css/style.css ">
+</head>
+<body>
+    <div class="bg">
+        <div id="gameOver">
+            <img class="gameOverImg"src="images/gameover.png" alt="Game Over Image">
+            Press Enter to continue !
+        </div>
+        <div id="start">
+            <img class="startImg"src="images/start.png" alt="Introduction Image">
+            <div class="intro">
+                LOST SNAKE 🐍 <br>
+                <p>
+                    Creator : Gurpreet Singh <br>
+                    Use ➡,⬅,⬆,⬇ arrow keys to move <br>
+                    Press Enter to start !
+                </p>
+            </div>
+        </div>
+        <div id="scoreBoard" class="scoreBoard">
+            <div class="score" id="score">Score : 0</div>
+            <div class="highScore" id="highScore">HighScore: 0</div>
+            <div class="lives" id="lives">Lives : 🐍🐍🐍</div>
+            <button id="restartBtn">Restart</button>
+        </div>
+        <div id="board" class="board"></div>
+    </div>
+</body>
+<script src="js/script.js"></script>
+</html>

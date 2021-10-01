@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.bg {
+    display: flex;
+    flex-wrap: wrap;
+    background: url("../images/bg6.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.board {
+    /* background-color: rgb(235, 250, 148); */
+    background: linear-gradient(rgb(108, 255, 103), rgb(245, 245, 111));
+    width: 90vmin;
+    height: 90vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(18, 1fr);
+}
+
+.head {
+    background: linear-gradient(rgb(4, 65, 4), lightgreen);
+    border-radius: 2rem;
+    border: 2px solid rgb(0, 0, 0);
+    z-index: 1;
+}
+
+.snakeBody {
+    background: linear-gradient(green, lightgreen);
+    border-radius: 2rem;
+    border: 2px solid rgb(0, 0, 0);
+    z-index: 1;
+}
+
+.food {
+    /* background: linear-gradient(black, red);
+    border-radius: 0.5rem;
+    border: 2px solid black; */
+}
+
+#score {
+    font-size: 3rem;
+    font-family: 'Fredoka One', cursive;
+}
+
+#highScore {
+    font-size: 3rem;
+    font-family: 'Fredoka One', cursive;
+}
+
+.scoreBoard {
+    background: linear-gradient(rgb(108, 255, 103), rgb(245, 245, 111));
+    border: 2px solid black;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+#lives {
+    font-size: 3rem;
+    font-family: 'Fredoka One', cursive;
+}
+
+#gameOver {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Fredoka One', cursive;
+    font-size: 2rem;
+    color: white;
+}
+
+.gameOverImg {
+    width: 90vmin;
+    height: 90vmin;
+    animation-name: gameOver;
+    animation-duration: 2s;
+}
+
+@keyframes gameOver {
+    0% {
+        opacity: 0;
+        transform: scale(0.1, 0.1);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+#start {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    font-size: 4rem;
+    color: rgb(15, 75, 38);
+}
+
+.startImg {
+    width: 90vmin;
+    height: 90vmin;
+    animation-name: gameOver;
+    animation-duration: 2s;
+}
+
+.intro {
+    background: linear-gradient(rgb(108, 255, 103), rgb(245, 245, 111));
+    padding: 5rem;
+    border-radius: 1rem;
+    border: 2px solid black;
+}
+
+.intro>p {
+    font-size: 2rem;
+    opacity: 80%;
+}
+
+#restartBtn {
+    padding: 1rem;
+    background-color: rgb(108, 255, 103);
+    border: 2px solid black;
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.5rem;
+}
+
+#restartBtn:hover {
+    box-shadow: 0px 0px 10px black;
+}
